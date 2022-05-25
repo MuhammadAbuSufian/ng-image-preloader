@@ -1,0 +1,21 @@
+{
+  "name": "ng-image-preloader",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.1.0",
+    "@angular/core": "^13.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": {
+    "name": "Muhammad",
+    "url": "https://github.com/MuhammadAbuSufian"
+  },
+  "keywords": [
+    "ng-image-preloader",
+    "angular-image-preloader",
+    "Angular-preload-image",
+    "ng-preload-image"
+  ]
+}

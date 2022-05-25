@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "e73a5a1f-4791-4c16-b3c2-841f72fe5b85"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "image-preloader": {
+      "projectType": "library",
+      "root": "projects/image-preloader",
+      "sourceRoot": "projects/image-preloader/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/image-preloader/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/image-preloader/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/image-preloader/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/image-preloader/src/test.ts",
+            "tsConfig": "projects/image-preloader/tsconfig.spec.json",
+            "karmaConfig": "projects/image-preloader/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "image-preloader"
+}
