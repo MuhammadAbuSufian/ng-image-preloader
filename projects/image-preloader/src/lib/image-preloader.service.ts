@@ -17,7 +17,5 @@ export class ImagePreloaderService {
       container.appendChild(image);
     })
     document.getElementsByTagName('body')[0].appendChild(container);
-    // @ts-ignore
-    document.getElementById('preload-image-holder').remove();
   }
 }

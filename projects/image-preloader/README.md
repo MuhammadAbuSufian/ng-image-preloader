@@ -1,24 +1,22 @@
-# ImagePreloader
+# NgImagePreloader
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.0.
+It preloads images during application loading.
 
-## Code scaffolding
+#### Installation
 
-Run `ng generate component component-name --project image-preloader` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project image-preloader`.
-> Note: Don't forget to add `--project image-preloader` or else it will be added to the default project in your `angular.json` file. 
+```bash
+npm install ng-image-preloader
+```
 
-## Build
+##### Example Usage
 
-Run `ng build image-preloader` to build the project. The build artifacts will be stored in the `dist/` directory.
+```javascript
+import { ImagePreloaderModule } from 'ng-image-preloader';
 
-## Publishing
-
-After building your library with `ng build image-preloader`, go to the dist folder `cd dist/image-preloader` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test image-preloader` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+imports: [
+  ImagePreloaderModule.forRoot([
+    'icon-calendar.png',
+    'icon-time.png'
+  ])
+]
+```
